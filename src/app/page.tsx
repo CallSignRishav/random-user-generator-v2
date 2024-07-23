@@ -1,6 +1,6 @@
 import FetchData from "@/components/FetchData";
 import LoadingCard from "@/components/LoadingCard";
-import { Button } from "@nextui-org/button";
+import RefetchBtn from "@/components/RefetchBtn";
 import { Suspense } from "react";
 
 const page = async () => {
@@ -13,9 +13,7 @@ const page = async () => {
           </div>
 
           <div className="">
-            <Button color="secondary" variant="bordered" size="lg" radius="lg">
-              Refetch
-            </Button>
+            <RefetchBtn />
           </div>
         </div>
 
