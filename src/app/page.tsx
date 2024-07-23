@@ -7,7 +7,7 @@ const page = async () => {
   return (
     <>
       <div className="bg-[url('/bg-pic.jpg')] bg-no-repeat bg-cover bg-center h-dvh">
-        <div className="w-full h-[10%] flex justify-around items-center bg-black/10 backdrop-blur-lg backdrop-filter">
+        <div className="w-full h-[15%] lg:h-[10%] flex flex-col lg:flex-row justify-around items-center gap-1 bg-black/10 backdrop-blur-lg backdrop-filter p-2">
           <div className="text-3xl font-bold bg-gradient-to-r from-blue-500 from-10% to-orange-200 to-60% bg-clip-text text-transparent">
             RandomUserGenerator
           </div>
@@ -17,7 +17,7 @@ const page = async () => {
           </div>
         </div>
 
-        <div className="grid place-items-center h-[90%]">
+        <div className="grid place-items-center h-[85%] lg:[90%] p-3">
           <Suspense fallback={<LoadingCard />}>
             <FetchData />
           </Suspense>

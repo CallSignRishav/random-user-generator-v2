@@ -19,13 +19,13 @@ const FetchData = async () => {
 
   return (
     <>
-      <Card className="lg:w-[400px] bg-black/10 border border-blue-800 backdrop-blur-sm backdrop-filter text-white">
+      <Card className="lg:w-[400px] bg-black/10 border border-blue-800 backdrop-blur-sm backdrop-filter text-white py-5">
         <CardHeader className="flex flex-col justify-center items-center gap-3">
           <div className="rounded-full">
             <Image
               src={data.picture.large}
-              width={250}
-              height={250}
+              width={200}
+              height={200}
               radius="full"
             />
           </div>
