@@ -7,14 +7,14 @@ import { AtSign, Phone, Calendar, MapPin } from "lucide-react";
 const LoadingCard = () => {
   return (
     <>
-      <Card className="lg:w-[400px]  bg-white/10  backdrop-blur-xl text-white">
+      <Card className="lg:w-[400px] bg-black/10 shadow-lg backdrop-blur-sm backdrop-filter text-white py-5">
         <CardHeader className="flex flex-col justify-center items-center gap-3">
           <div className="rounded-full">
             <Skeleton className="rounded-full">
               <Image
                 src="/favicon.ico"
-                width={250}
-                height={250}
+                width={200}
+                height={200}
                 radius="full"
               />
             </Skeleton>
